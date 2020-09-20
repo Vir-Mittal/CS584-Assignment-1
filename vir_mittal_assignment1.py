@@ -57,7 +57,7 @@ neg_words = ['no', 'not', 'without', 'absence of', 'cannot', "couldn't", 'could 
 for id_ in infile_dict:
 	result_dict = {}
 	text = infile_dict[id_]
-	sentences = sent_tokenize(text)
+	sentences = sent_tokenize(str(text))
 	result_dict["ID"] = id_
 	cuids_list = []
 	cuids = ""
